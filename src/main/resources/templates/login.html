@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Login Form</title>
+    <style>
+        /* Reset and base */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            min-height: 600px;
+            padding: 0 15px;
+        }
+        .login-container {
+            background: #fff;
+            padding: 30px 25px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-button:hover,
+        .back-button:focus {
+            background-color: rgba(102, 126, 234, 0.15);
+            outline: none;
+        }
+        .back-button svg {
+            width: 24px;
+            height: 24px;
+            stroke: #667eea;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+        .login-container h2 {
+            margin-bottom: 25px;
+            font-weight: 700;
+            color: #4b3caa;
+        }
+        form {
+            width: 100%;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1.8px solid #ccc;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #667eea;
+            outline: none;
+            box-shadow: 0 0 8px rgba(102,126,234,0.5);
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 14px 15px;
+            background-color: #667eea;
+            border: none;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover,
+        button[type="submit"]:focus {
+            background-color: #5a6ddf;
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #667eea;
+            text-align: right;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .forgot-password:hover,
+        .forgot-password:focus {
+            text-decoration: underline;
+        }
+        @media (max-width: 360px) {
+            body {
+                padding: 0 10px;
+            }
+            .login-container {
+                padding: 25px 20px;
+                width: 100%;
+                max-width: 320px;
+            }
+            .back-button {
+                top: 15px;
+                left: 15px;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="login-container" role="main" aria-label="Login Form">
+    <button class="back-button" aria-label="Go back" title="Go back" type="button" onclick="history.back()">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <h2>Login</h2>
+    <form id="loginForm" aria-describedby="loginHelp" novalidate>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" autocomplete="username" required aria-required="true" aria-describedby="usernameHelp" />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required aria-required="true" aria-describedby="passwordHelp" />
+        <button type="submit">Sign In</button>
+    </form>
+    <a th:href="@{/index}"  class="forgot-password" tabindex="0">Forgot Password?</a>
+</div>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = event.target.username.value.trim();
+        const password = event.target.password.value.trim();
+        if (!username) {
+            alert('Please enter your username.');
+            event.target.username.focus();
+            return;
+        }
+        if (!password) {
+            alert('Please enter your password.');
+            event.target.password.focus();
+            return;
+        }
+        // Simulate login success for demo
+        alert('Login successful!\nUsername: ' + username);
+        event.target.reset();
+    });
+</script>
+</body>
+</html>
+</content>
+</create_file>
+```
