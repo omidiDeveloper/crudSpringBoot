@@ -4,6 +4,13 @@ A powerful **Spring Boot MVC** application for managing student records — buil
 This backend service provides RESTful APIs to **create, read, update, and delete (CRUD)** student data efficiently.
 It is designed to integrate easily with Android, web, or desktop frontends.
 
+
+## 📱 Android Application
+
+You can also check out the **Android Application** that connects to this backend!  
+👉 [View Android App Repository](https://github.com/omidiDeveloper/StudentManager)
+
+
 ---
 
 ## 🧩 Table of Contents
@@ -78,6 +85,9 @@ student_spring/
 ├── build.gradle.kts
 └── README.md
 ```
+---
+
+
 
 ---
 
