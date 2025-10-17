@@ -22,13 +22,13 @@ It is designed to integrate easily with Android, web, or desktop frontends.
 
 ## ⚙️ Features
 
-✅ Built with **Spring Boot** and **Kotlin**
-✅ Follows **MVC Architecture**
-✅ CRUD operations for students
-✅ Uses **Spring Data JPA** for database management
-✅ Supports **MySQL** integration
-✅ Well-structured RESTful API design
-✅ Ready for Android or Web integration
+✅ Built with **Spring Boot** and **Kotlin**</br>
+✅ Follows **MVC Architecture**</br>
+✅ CRUD operations for students</br>
+✅ Uses **Spring Data JPA** for database management</br>
+✅ Supports **MySQL** integration</br>
+✅ Well-structured RESTful API design</br>
+✅ Ready for Android or Web integration</br>
 
 ---
 
@@ -195,9 +195,7 @@ spring.jpa.show-sql=true
 
 ## 📸 Screenshots
 
-<img width="431" height="901" alt="image" src="https://github.com/user-attachments/assets/ff8c20ac-94f4-480c-b22e-fa6e72e539c2" /> <img width="454" height="935" alt="image" src="https://github.com/user-attachments/assets/0b94a19e-e0a5-42d9-b4b0-9ebaaafdedaf" /> <img width="447" height="929" alt="image" src="https://github.com/user-attachments/assets/0cd26518-414a-4d45-bb7b-d909c78f4a59" /> <img width="443" height="893" alt="image" src="https://github.com/user-attachments/assets/4e7214cd-9f1f-472d-8b2d-a52008ca05bf" />
-
-
+<img width="439" height="980" alt="image" src="https://github.com/user-attachments/assets/5f94723c-e83f-4bcb-a197-bfeb3d6fba17" />  <img width="449" height="939" alt="image" src="https://github.com/user-attachments/assets/5863ba3b-81f3-49f3-9500-6d56a05114df" />  <img width="458" height="928" alt="image" src="https://github.com/user-attachments/assets/c74e45fa-4163-462a-882f-021ab8247bab" />  <img width="443" height="955" alt="image" src="https://github.com/user-attachments/assets/f3adbdc6-122a-4657-9e43-76b713b31027" />
 
 
 
@@ -213,6 +211,8 @@ Feel free to use and modify it for educational or commercial purposes.
 ## 👨‍💻 Author
 
 **Mohammad Omidi**
+
+📍 Android Developer | Kotlin & Spring Boot Enthusiast
 
 -📧 [OmidiKotlin@gmail.com](mailto:OmidiKotlin@gmail.com) </br>
 -💻 [GitHub: @omidiDeveloper](https://github.com/omidiDeveloper) </br>
