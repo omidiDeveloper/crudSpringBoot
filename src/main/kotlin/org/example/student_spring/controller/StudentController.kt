@@ -47,7 +47,7 @@ class StudentController {
     @DeleteMapping("/students/deleting{id}")
     fun deleteStudent(@PathVariable("id") id: Long? ){
         studentRepository.deleteById(id!!)
-        ResponseEntity.ok(id.toString())
+         ResponseEntity.ok(id.toString())
     }
 
 }
