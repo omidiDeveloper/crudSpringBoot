@@ -21,17 +21,17 @@ class StudentController {
 
 
     @PostMapping("/students")
-    fun insertStudent(@RequestBody student: Student): ResponseEntity<String> {
+    fun insertStudent(@RequestBody student: Student) {
         studentRepository.save(student)
-        return ResponseEntity.ok("Student inserted successfully")
+        ResponseEntity.ok("Student inserted successfully")
     }
 
 
     @PutMapping("students/updating/{id}")
-    fun updateStudent(@PathVariable id: Long, @RequestBody student: Student): ResponseEntity<String> {
+    fun updateStudent(@PathVariable id: Long, @RequestBody student: Student) {
         val existingStudent = studentRepository.findById(id)
 
-        return if (existingStudent.isPresent) {
+         if (existingStudent.isPresent) {
             val updatedStudent = existingStudent.get().apply {
                 name = student.name
                 course = student.course
@@ -45,9 +45,9 @@ class StudentController {
     }
 
     @DeleteMapping("/students/deleting{id}")
-    fun deleteStudent(@PathVariable("id") id: Long? ): ResponseEntity<String>{
+    fun deleteStudent(@PathVariable("id") id: Long? ){
         studentRepository.deleteById(id!!)
-        return ResponseEntity.ok(id.toString())
+        ResponseEntity.ok(id.toString())
     }
 
 }
